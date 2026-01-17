@@ -10,7 +10,7 @@ const app = express();
 // MIDDLEWARES
 app.use(cors({
   origin: [
-    "https://imagix-frontend.onrender.com", 
+    "https://imagix-frontend-5151.onrender.com", 
     "https://admin-imagix.onrender.com" 
   ],
   credentials: true
