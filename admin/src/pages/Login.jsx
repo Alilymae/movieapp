@@ -75,7 +75,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card">
         <div className="login-header">
-          <h1>Imagix Cinema Admin</h1>
+          <h1>IMAGIX</h1>
         </div>
 
         <form className="login-form" onSubmit={handleSubmit}>
@@ -87,7 +87,7 @@ const Login = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter your username (min 8 characters)"
+              placeholder="Username"
               required
             />
           </div>
