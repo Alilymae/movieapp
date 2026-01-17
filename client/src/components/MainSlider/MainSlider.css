@@ -1,0 +1,140 @@
+/* Hide default navigation buttons and pagination on mobile */
+@media screen and (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  
+  .swiper-pagination {
+    display: none !important;
+  }
+}
+
+/* Navigation button base styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0);
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1);
+}
+
+/* Arrow icon size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+/* Position adjustments */
+.swiper-button-prev {
+  left: 20px !important;
+}
+
+.swiper-button-next {
+  right: 20px !important;
+}
+
+/* Disabled state */
+.swiper-button-disabled {
+  opacity: 0.7 !important;
+  cursor: not-allowed !important;
+}
+
+/* Pagination Container */
+.swiper-pagination {
+  bottom: 25px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+}
+
+/* Pagination Bullets - Base styles */
+.swiper-pagination-bullet {
+  width: 6px !important;
+  height: 6px !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+  margin: 0 4px !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+/* Active pagination bullet - Base styles */
+.swiper-pagination-bullet-active {
+  background: #c1121f !important;
+  width: 14px !important;
+  height: 6px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(193, 18, 31, 0.8);
+}
+
+/* Responsive: Tablet (768px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .swiper-pagination {
+    bottom: 25px !important;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 7px !important;
+    height: 7px !important;
+    margin: 0 3.5px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 16px !important;
+    height: 7px !important;
+  }
+}
+
+/* Responsive: Small tablets and large phones (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .swiper-pagination {
+    bottom: 20px !important;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+    margin: 0 3px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 14px !important;
+    height: 6px !important;
+  }
+}
+
+/* Responsive: Large desktop screens (1440px+) */
+@media screen and (min-width: 1440px) {
+  .swiper-pagination {
+    bottom: 40px !important;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 9px !important;
+    height: 9px !important;
+    margin: 0 4px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 20px !important;
+    height: 9px !important;
+  }
+}
+
+/* Hover effect on pagination bullets */
+.swiper-pagination-bullet:hover {
+  background: rgba(255, 255, 255, 0.897) !important;
+  transform: scale(1.2);
+}

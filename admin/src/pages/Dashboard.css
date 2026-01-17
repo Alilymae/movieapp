@@ -1,0 +1,389 @@
+.dashboard {
+  padding: 20px 0;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #e5383b;
+}
+
+.dashboard-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.dashboard-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #c1121f;
+}
+
+.tab {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  color: #a0a0a0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+}
+
+.tab:hover {
+  color: #e0e0e0;
+}
+
+.tab.active {
+  color: #e5383b;
+  border-bottom-color: #c1121f;
+}
+
+.error-banner {
+  background: rgba(193, 18, 31, 0.2);
+  border: 1px solid #c1121f;
+  color: #f0d0d5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-banner p {
+  margin: 0;
+  flex: 1;
+}
+
+.error-banner button {
+  padding: 6px 12px;
+  background: transparent;
+  border: none;
+  color: #f0d0d5;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.schedules-section {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #c1121f;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #c1121f 0%, #e5383b 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(193, 18, 31, 0.3);
+}
+
+.schedule-form {
+  background: #252525;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 2px solid #333;
+}
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+.form-section h3 {
+  margin: 0 0 15px 0;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #c1121f;
+  box-shadow: 0 0 8px rgba(193, 18, 31, 0.2);
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 2px solid #333;
+}
+
+.btn-cancel,
+.btn-submit {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-cancel {
+  background: #333;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.btn-cancel:hover {
+  background: #444;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #c1121f 0%, #e5383b 100%);
+  color: white;
+}
+
+.btn-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(193, 18, 31, 0.3);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+  font-size: 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #777;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.schedules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.schedule-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-card:hover {
+  box-shadow: 0 8px 20px rgba(193, 18, 31, 0.2);
+  transform: translateY(-5px);
+  border-color: #c1121f;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #c1121f 0%, #8b0a1e 100%);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.btn-delete {
+  padding: 6px 12px;
+  background: rgba(193, 18, 31, 0.3);
+  color: #f0d0d5;
+  border: 1px solid #c1121f;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background: rgba(193, 18, 31, 0.5);
+  box-shadow: 0 2px 8px rgba(193, 18, 31, 0.2);
+}
+
+.btn-delete:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-item .label {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.info-item strong {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.info-item strong.price {
+  color: #e5383b;
+  font-size: 1.1rem;
+}
+
+.info-item strong.seats {
+  color: #2d6a2d;
+}
+
+.bookings-section {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+}
+
+.bookings-section h2 {
+  margin: 0 0 20px 0;
+  color: #e0e0e0;
+  font-size: 1.5rem;
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 60px 20px;
+  color: #777;
+}
+
+.coming-soon p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .schedules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .btn-add {
+    width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn-cancel,
+  .btn-submit {
+    width: 100%;
+  }
+}
