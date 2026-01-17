@@ -75,7 +75,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card">
         <div className="login-header">
-          <h1>IMAGIX</h1>
+          <h1>IMAGIX ADMIN</h1>
         </div>
 
         <form className="login-form" onSubmit={handleSubmit}>
