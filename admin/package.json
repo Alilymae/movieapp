@@ -1,11 +1,11 @@
 {
-  "name": "cinema-admin",
+  "name": "imagix-admin",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "npm run dev",
-    "build": "npm exec vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "start": "serve -s dist"
   },
@@ -14,12 +14,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
-    "react-toastify": "^9.1.3"
+    "react-toastify": "^9.1.3",
+    "vite": "^5.4.21"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.4.21"
+    "@vitejs/plugin-react": "^4.2.1"
   }
 }
